@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Dark mode switches when <html data-theme="dark"> is set by components/ThemeToggle.js */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+:root {
+  --ink: #1b1a3a;
+  --paper: #f7f6fb;
+  --surface: #ffffff;
+  --signal: #5b3df5;
+  --marker: #ffc933;
+  --mist: #e1def0;
+  --danger: #b91c1c;
 }
 
+:root[data-theme="dark"] {
+  --ink: #ecebff;
+  --paper: #14132b;
+  --surface: #1e1d3d;
+  --signal: #a592ff;
+  --marker: #ffc933;
+  --mist: #34316b;
+  --danger: #ff8a80;
+}
+
+/* Use them as bg-paper, text-ink, bg-surface, bg-signal, border-mist ... */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-signal: var(--signal);
+  --color-marker: var(--marker);
+  --color-mist: var(--mist);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-code), ui-monospace, SFMono-Regular, monospace;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
