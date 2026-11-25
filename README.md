@@ -2,7 +2,7 @@
 
 A fast URL shortener that needs no sign-up. Paste a long link, optionally pick your own alias and an expiry date, and get a short link with a QR code. A "My links" page shows click counts and lets you delete the links you created.
 
-**Live demo:** https://your-app.vercel.app <!-- replace with your Vercel URL -->
+**Live demo:** (https://short-links-inky.vercel.app/) <!-- replace with your Vercel URL -->
 
 <!-- Save a screenshot as public/screenshot.png, then uncomment the next line -->
 <!-- ![ShortLinks screenshot](public/screenshot.png) -->
